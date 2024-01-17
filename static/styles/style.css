@@ -1,0 +1,44 @@
+
+body {
+    background-color: #606c38;
+    text-align: center;
+    color:whitesmoke;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    display:block;
+    font-size: 60px;
+}
+
+.main{
+    border: 3px solid black;
+}
+
+.two {
+    margin:20px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 18px;
+}
+
+.two:hover {
+    background-color: rgb(116, 106, 66);
+}
+
+.one {
+    display:block;
+    border-radius: 10px;
+    height: 25px;
+    width: 40%;
+    font-size: 15px;
+    margin:auto;
+}
+
+
+
+
+
+

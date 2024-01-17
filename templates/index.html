@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>YT Comments Sentiment Analysis</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">MB</div>
+        <p>test 0.1.0</p>
+    </nav>
+    <div class="main">
+        <form action="{{url_for('predict')}}" method="post">
+            <h2>Youtube Video Comments Sentiment Analysis of (Top 100 Comments sorted by Relevance)</h2>
+            <h3>Youtube Video Link</h3> 
+            <input class="one" name="url_name" required="required">      
+            <button class="two" type="submit ">Check the Sentiment</button>
+        </form>
+        <h3>THE RESULTS: </h3>
+        <h3>{{prediction_text}}<h3>
+    </div>
+
+</body>
+
+</html>
