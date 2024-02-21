@@ -95,4 +95,5 @@ def predict():
         print('NO ENTRY')
         return render_template('index.html')
 
-
+if __name__=="__main__":
+    app.run()
